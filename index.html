@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app">
+      <button id="one" class="calc-btn" onclick="enterKey('1');">1</button>
+      <button id="two" class="calc-btn" onclick="enterKey('2');">2</button>
+      <button id="three" class="calc-btn" onclick="enterKey('3');">3</button>
+      <button id="four" class="calc-btn" onclick="enterKey('4');">4</button>
+      <button id="five" class="calc-btn" onclick="enterKey('5');">5</button>
+      <button id="six" class="calc-btn" onclick="enterKey('6');">6</button>
+      <button id="seven" class="calc-btn" onclick="enterKey('7');">7</button>
+      <button id="eight" class="calc-btn" onclick="enterKey('8');">8</button>
+      <button id="nine" class="calc-btn" onclick="enterKey('9');">9</button>
+      <button id="ten" class="calc-btn" onclick="enterKey('0');">0</button>
+      <button id="add" class="calc-btn" onclick="enterKey('+');">+</button>
+      <button id="sub" class="calc-btn" onclick="enterKey('-');">-</button>
+      <button id="equal" class="calc-btn">=</button>
+      <div id="result" class="calc-btn"></div>
+    </div>
+    <script src="src/index.js"></script>
+
+    <script>
+      function enterKey(e) {
+        // console.log(e, document.getElementById("result").innerHTML);
+        // let res = document.getElementById('result')
+        document.getElementById('result').innerHTML =
+          document.getElementById('result').innerHTML + e;
+      }
+    </script>
+  </body>
+</html>
